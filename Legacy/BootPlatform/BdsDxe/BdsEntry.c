@@ -472,7 +472,7 @@ BdsEntry (
   // Try to boot any volume
   //
   gST->ConOut->OutputString (gST->ConOut, L"BOOT MISMATCH!\r\n");
-  gBS->Stall (3000000);
+  gBS->Stall (500000);
   BdsBootDeviceSelect (FALSE);
 
   //
